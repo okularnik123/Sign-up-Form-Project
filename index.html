@@ -27,17 +27,17 @@
           <div class="form-row">
             <div class="form-div">
               <label for="firstname">FIRST NAME</label>
-              <input type="text" name="firstname" id="firstname" />
+              <input required type="text" name="firstname" id="firstname" />
             </div>
             <div class="form-div">
               <label for="lastname">LAST NAME</label>
-              <input type="text" name="lastname" id="lastname" />
+              <input required type="text" name="lastname" id="lastname" />
             </div>
           </div>
           <div class="form-row">
             <div class="form-div">
               <label for="email">E-MAIL</label>
-              <input type="email" name="email" id="email" />
+              <input required type="email" name="email" id="email" />
             </div>
             <div class="form-div">
               <label for="tel">PHONE NUMBER</label>
@@ -47,11 +47,19 @@
           <div class="form-row">
             <div class="form-div">
               <label for="password">PASSWORD</label>
-              <input type="password" name="password" id="password" />
+              <input
+                required
+                type="password"
+                class="error"
+                name="password"
+                id="password"
+              />
+              <span></span>
             </div>
+
             <div class="form-div">
               <label for="password">CONFIRM PASSWORD</label>
-              <input type="password" name="password1" id="password1" />
+              <input required type="password" name="password1" id="password1" />
             </div>
           </div>
         </fieldset>
@@ -59,5 +67,7 @@
       </form>
       <p>Already have an account? <a>Log in</a></p>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
